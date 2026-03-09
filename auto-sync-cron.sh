@@ -1,18 +1,32 @@
 #!/bin/bash
-# OpenClaw議事録自動同期（cron用）
+# OpenClaw議事録自動同期（cron用） - 強化版再発防止システム統合
 
 cd /Users/ogawashinpei/openclaw-public-meetings
 
-# プライベートリポジトリから新しい議事録をコピー
+echo "🚀 議事録自動同期開始: $(date)"
+
+# 🛡️ Step 1: 事前機密スキャン・削除
+echo "🛡️ 事前機密スキャン実行..."
+python3 confidential-monitor.py scan
+
+# 🔄 Step 2: プライベートリポジトリから新しい議事録をコピー
+echo "📁 プライベートリポジトリ同期中..."
 rsync -av --exclude="archive/" /Users/ogawashinpei/.openclaw/workspace/company-knowledge/Operations/meetings/daily/ ./daily/
 
-# 🚨 機密議事録フィルタリング・マスキング処理
+# 🚨 Step 3: 機密議事録フィルタリング・マスキング処理
 find ./daily -name "*.md" -type f -newer .last-sync 2>/dev/null | while read file; do
     echo "🔍 議事録処理: $(basename "$file")"
     
-    # 機密性チェック
+    # 強化機密性チェック
     if ! ./confidential-filter.sh "$file"; then
         echo "🚨 機密議事録検出: $(basename "$file") - 公開リポジトリから削除"
+        rm -f "$file"
+        continue
+    fi
+    
+    # 2026-03-09系統の特別チェック
+    if [[ "$(basename "$file")" =~ 2026-03-09 ]]; then
+        echo "🚨 2026-03-09パターン検出: $(basename "$file") - 強制削除"
         rm -f "$file"
         continue
     fi
@@ -70,3 +84,13 @@ fi
 
 # 最終同期時刻記録
 touch .last-sync
+
+# 🛡️ Step 5: 事後機密スキャン・最終確認
+echo "🔍 事後機密スキャン実行..."
+python3 confidential-monitor.py scan
+
+# 🗑️ Step 6: 緊急削除スクリプト実行
+echo "🗑️ 緊急削除チェック実行..."
+./auto-delete-confidential.sh
+
+echo "🛡️ 再発防止システム完全実行済み: $(date)"
