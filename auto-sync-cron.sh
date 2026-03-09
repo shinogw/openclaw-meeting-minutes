@@ -6,9 +6,18 @@ cd /Users/ogawashinpei/openclaw-public-meetings
 # プライベートリポジトリから新しい議事録をコピー
 rsync -av --exclude="archive/" /Users/ogawashinpei/.openclaw/workspace/company-knowledge/Operations/meetings/daily/ ./daily/
 
-# 機密情報マスキング
+# 🚨 機密議事録フィルタリング・マスキング処理
 find ./daily -name "*.md" -type f -newer .last-sync 2>/dev/null | while read file; do
-    echo "マスキング処理: $(basename "$file")"
+    echo "🔍 議事録処理: $(basename "$file")"
+    
+    # 機密性チェック
+    if ! ./confidential-filter.sh "$file"; then
+        echo "🚨 機密議事録検出: $(basename "$file") - 公開リポジトリから削除"
+        rm -f "$file"
+        continue
+    fi
+    
+    echo "✅ 公開可能 - マスキング処理実行: $(basename "$file")"
     
     # 🚨 緊急追加: 人名の厳格マスキング
     sed -i.bak 's/Ogawa Shimpei/[CEO]/g' "$file"
