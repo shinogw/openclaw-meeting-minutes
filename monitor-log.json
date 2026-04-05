@@ -1,312 +1,5 @@
 [
   {
-    "timestamp": "2026-04-05T08:40:02.032609",
-    "total_files": 0,
-    "confidential_files": [],
-    "clean_files": [],
-    "deleted_files": []
-  },
-  {
-    "timestamp": "2026-04-05T08:50:01.342347",
-    "total_files": 0,
-    "confidential_files": [],
-    "clean_files": [],
-    "deleted_files": []
-  },
-  {
-    "timestamp": "2026-04-05T09:00:01.652493",
-    "total_files": 0,
-    "confidential_files": [],
-    "clean_files": [],
-    "deleted_files": []
-  },
-  {
-    "timestamp": "2026-04-05T09:00:01.667190",
-    "total_files": 0,
-    "confidential_files": [],
-    "clean_files": [],
-    "deleted_files": []
-  },
-  {
-    "timestamp": "2026-04-05T09:00:03.857486",
-    "total_files": 7,
-    "confidential_files": [
-      {
-        "filename": "meeting_2026-03-08_AIエージェント構造検討会議_2026_03_08.md",
-        "issues": [
-          {
-            "category": "names",
-            "pattern": "Ogawa Shimpei",
-            "matches": 1,
-            "examples": [
-              "Ogawa Shimpei"
-            ]
-          },
-          {
-            "category": "names",
-            "pattern": "しんぺー",
-            "matches": 3,
-            "examples": [
-              "しんぺー",
-              "しんぺー",
-              "しんぺー"
-            ]
-          },
-          {
-            "category": "strategic",
-            "pattern": "戦略会議",
-            "matches": 1,
-            "examples": [
-              "戦略会議"
-            ]
-          }
-        ],
-        "severity": "HIGH"
-      },
-      {
-        "filename": "meeting_2026-03-09_______________1773079219155.md",
-        "issues": [
-          {
-            "category": "names",
-            "pattern": "しんぺー",
-            "matches": 3,
-            "examples": [
-              "しんぺー",
-              "しんぺー",
-              "しんぺー"
-            ]
-          },
-          {
-            "category": "strategic",
-            "pattern": "機密情報",
-            "matches": 2,
-            "examples": [
-              "機密情報",
-              "機密情報"
-            ]
-          },
-          {
-            "category": "dates",
-            "pattern": "2026-03-09",
-            "matches": 2,
-            "examples": [
-              "2026-03-09",
-              "2026-03-09"
-            ]
-          }
-        ],
-        "severity": "CRITICAL"
-      },
-      {
-        "filename": "meeting_2026-03-09__2026_03_08_17_28_PDT_に開始した会議___Gemini_によるメモ.md",
-        "issues": [
-          {
-            "category": "names",
-            "pattern": "Ogawa Shimpei",
-            "matches": 2,
-            "examples": [
-              "Ogawa Shimpei",
-              "Ogawa Shimpei"
-            ]
-          },
-          {
-            "category": "names",
-            "pattern": "しんぺー",
-            "matches": 4,
-            "examples": [
-              "しんぺー",
-              "しんぺー",
-              "しんぺー"
-            ]
-          },
-          {
-            "category": "names",
-            "pattern": "ジュンヤ",
-            "matches": 1,
-            "examples": [
-              "ジュンヤ"
-            ]
-          },
-          {
-            "category": "names",
-            "pattern": "ヒロキ",
-            "matches": 2,
-            "examples": [
-              "ヒロキ",
-              "ヒロキ"
-            ]
-          },
-          {
-            "category": "names",
-            "pattern": "ミル",
-            "matches": 1,
-            "examples": [
-              "ミル"
-            ]
-          },
-          {
-            "category": "financial",
-            "pattern": "\\d+万円",
-            "matches": 1,
-            "examples": [
-              "20万円"
-            ]
-          },
-          {
-            "category": "financial",
-            "pattern": "\\d+億円",
-            "matches": 1,
-            "examples": [
-              "2億円"
-            ]
-          },
-          {
-            "category": "financial",
-            "pattern": "手切れ金",
-            "matches": 4,
-            "examples": [
-              "手切れ金",
-              "手切れ金",
-              "手切れ金"
-            ]
-          },
-          {
-            "category": "financial",
-            "pattern": "退職金",
-            "matches": 2,
-            "examples": [
-              "退職金",
-              "退職金"
-            ]
-          },
-          {
-            "category": "strategic",
-            "pattern": "関係解消",
-            "matches": 5,
-            "examples": [
-              "関係解消",
-              "関係解消",
-              "関係解消"
-            ]
-          },
-          {
-            "category": "strategic",
-            "pattern": "戦略会議",
-            "matches": 2,
-            "examples": [
-              "戦略会議",
-              "戦略会議"
-            ]
-          },
-          {
-            "category": "strategic",
-            "pattern": "機密情報",
-            "matches": 3,
-            "examples": [
-              "機密情報",
-              "機密情報",
-              "機密情報"
-            ]
-          },
-          {
-            "category": "strategic",
-            "pattern": "対立",
-            "matches": 1,
-            "examples": [
-              "対立"
-            ]
-          },
-          {
-            "category": "strategic",
-            "pattern": "派遣決定",
-            "matches": 1,
-            "examples": [
-              "派遣決定"
-            ]
-          },
-          {
-            "category": "dates",
-            "pattern": "2026-03-09",
-            "matches": 1,
-            "examples": [
-              "2026-03-09"
-            ]
-          }
-        ],
-        "severity": "CRITICAL"
-      },
-      {
-        "filename": "meeting_2026-03-10_GitHub_Token__________1773163594733.md",
-        "issues": [
-          {
-            "category": "names",
-            "pattern": "しんぺー",
-            "matches": 2,
-            "examples": [
-              "しんぺー",
-              "しんぺー"
-            ]
-          }
-        ],
-        "severity": "CRITICAL"
-      },
-      {
-        "filename": "meeting_2026-03-10_Google_Apps_Script________1773170349398.md",
-        "issues": [
-          {
-            "category": "names",
-            "pattern": "しんぺー",
-            "matches": 2,
-            "examples": [
-              "しんぺー",
-              "しんぺー"
-            ]
-          }
-        ],
-        "severity": "CRITICAL"
-      },
-      {
-        "filename": "meeting_2026-03-09_____________1773070229492.md",
-        "issues": [
-          {
-            "category": "dates",
-            "pattern": "2026-03-09",
-            "matches": 2,
-            "examples": [
-              "2026-03-09",
-              "2026-03-09"
-            ]
-          }
-        ],
-        "severity": "CRITICAL"
-      },
-      {
-        "filename": "meeting_2026-03-10__GitHub_Token________1773164357718.md",
-        "issues": [
-          {
-            "category": "names",
-            "pattern": "しんぺー",
-            "matches": 2,
-            "examples": [
-              "しんぺー",
-              "しんぺー"
-            ]
-          }
-        ],
-        "severity": "CRITICAL"
-      }
-    ],
-    "clean_files": [],
-    "deleted_files": [
-      "meeting_2026-03-09_______________1773079219155.md",
-      "meeting_2026-03-09__2026_03_08_17_28_PDT_に開始した会議___Gemini_によるメモ.md",
-      "meeting_2026-03-10_GitHub_Token__________1773163594733.md",
-      "meeting_2026-03-10_Google_Apps_Script________1773170349398.md",
-      "meeting_2026-03-09_____________1773070229492.md",
-      "meeting_2026-03-10__GitHub_Token________1773164357718.md"
-    ]
-  },
-  {
     "timestamp": "2026-04-05T09:10:01.292611",
     "total_files": 0,
     "confidential_files": [],
@@ -6406,6 +6099,313 @@
   },
   {
     "timestamp": "2026-04-05T19:30:01.729797",
+    "total_files": 0,
+    "confidential_files": [],
+    "clean_files": [],
+    "deleted_files": []
+  },
+  {
+    "timestamp": "2026-04-05T19:30:03.863543",
+    "total_files": 7,
+    "confidential_files": [
+      {
+        "filename": "meeting_2026-03-08_AIエージェント構造検討会議_2026_03_08.md",
+        "issues": [
+          {
+            "category": "names",
+            "pattern": "Ogawa Shimpei",
+            "matches": 1,
+            "examples": [
+              "Ogawa Shimpei"
+            ]
+          },
+          {
+            "category": "names",
+            "pattern": "しんぺー",
+            "matches": 3,
+            "examples": [
+              "しんぺー",
+              "しんぺー",
+              "しんぺー"
+            ]
+          },
+          {
+            "category": "strategic",
+            "pattern": "戦略会議",
+            "matches": 1,
+            "examples": [
+              "戦略会議"
+            ]
+          }
+        ],
+        "severity": "HIGH"
+      },
+      {
+        "filename": "meeting_2026-03-09_______________1773079219155.md",
+        "issues": [
+          {
+            "category": "names",
+            "pattern": "しんぺー",
+            "matches": 3,
+            "examples": [
+              "しんぺー",
+              "しんぺー",
+              "しんぺー"
+            ]
+          },
+          {
+            "category": "strategic",
+            "pattern": "機密情報",
+            "matches": 2,
+            "examples": [
+              "機密情報",
+              "機密情報"
+            ]
+          },
+          {
+            "category": "dates",
+            "pattern": "2026-03-09",
+            "matches": 2,
+            "examples": [
+              "2026-03-09",
+              "2026-03-09"
+            ]
+          }
+        ],
+        "severity": "CRITICAL"
+      },
+      {
+        "filename": "meeting_2026-03-09__2026_03_08_17_28_PDT_に開始した会議___Gemini_によるメモ.md",
+        "issues": [
+          {
+            "category": "names",
+            "pattern": "Ogawa Shimpei",
+            "matches": 2,
+            "examples": [
+              "Ogawa Shimpei",
+              "Ogawa Shimpei"
+            ]
+          },
+          {
+            "category": "names",
+            "pattern": "しんぺー",
+            "matches": 4,
+            "examples": [
+              "しんぺー",
+              "しんぺー",
+              "しんぺー"
+            ]
+          },
+          {
+            "category": "names",
+            "pattern": "ジュンヤ",
+            "matches": 1,
+            "examples": [
+              "ジュンヤ"
+            ]
+          },
+          {
+            "category": "names",
+            "pattern": "ヒロキ",
+            "matches": 2,
+            "examples": [
+              "ヒロキ",
+              "ヒロキ"
+            ]
+          },
+          {
+            "category": "names",
+            "pattern": "ミル",
+            "matches": 1,
+            "examples": [
+              "ミル"
+            ]
+          },
+          {
+            "category": "financial",
+            "pattern": "\\d+万円",
+            "matches": 1,
+            "examples": [
+              "20万円"
+            ]
+          },
+          {
+            "category": "financial",
+            "pattern": "\\d+億円",
+            "matches": 1,
+            "examples": [
+              "2億円"
+            ]
+          },
+          {
+            "category": "financial",
+            "pattern": "手切れ金",
+            "matches": 4,
+            "examples": [
+              "手切れ金",
+              "手切れ金",
+              "手切れ金"
+            ]
+          },
+          {
+            "category": "financial",
+            "pattern": "退職金",
+            "matches": 2,
+            "examples": [
+              "退職金",
+              "退職金"
+            ]
+          },
+          {
+            "category": "strategic",
+            "pattern": "関係解消",
+            "matches": 5,
+            "examples": [
+              "関係解消",
+              "関係解消",
+              "関係解消"
+            ]
+          },
+          {
+            "category": "strategic",
+            "pattern": "戦略会議",
+            "matches": 2,
+            "examples": [
+              "戦略会議",
+              "戦略会議"
+            ]
+          },
+          {
+            "category": "strategic",
+            "pattern": "機密情報",
+            "matches": 3,
+            "examples": [
+              "機密情報",
+              "機密情報",
+              "機密情報"
+            ]
+          },
+          {
+            "category": "strategic",
+            "pattern": "対立",
+            "matches": 1,
+            "examples": [
+              "対立"
+            ]
+          },
+          {
+            "category": "strategic",
+            "pattern": "派遣決定",
+            "matches": 1,
+            "examples": [
+              "派遣決定"
+            ]
+          },
+          {
+            "category": "dates",
+            "pattern": "2026-03-09",
+            "matches": 1,
+            "examples": [
+              "2026-03-09"
+            ]
+          }
+        ],
+        "severity": "CRITICAL"
+      },
+      {
+        "filename": "meeting_2026-03-10_GitHub_Token__________1773163594733.md",
+        "issues": [
+          {
+            "category": "names",
+            "pattern": "しんぺー",
+            "matches": 2,
+            "examples": [
+              "しんぺー",
+              "しんぺー"
+            ]
+          }
+        ],
+        "severity": "CRITICAL"
+      },
+      {
+        "filename": "meeting_2026-03-10_Google_Apps_Script________1773170349398.md",
+        "issues": [
+          {
+            "category": "names",
+            "pattern": "しんぺー",
+            "matches": 2,
+            "examples": [
+              "しんぺー",
+              "しんぺー"
+            ]
+          }
+        ],
+        "severity": "CRITICAL"
+      },
+      {
+        "filename": "meeting_2026-03-09_____________1773070229492.md",
+        "issues": [
+          {
+            "category": "dates",
+            "pattern": "2026-03-09",
+            "matches": 2,
+            "examples": [
+              "2026-03-09",
+              "2026-03-09"
+            ]
+          }
+        ],
+        "severity": "CRITICAL"
+      },
+      {
+        "filename": "meeting_2026-03-10__GitHub_Token________1773164357718.md",
+        "issues": [
+          {
+            "category": "names",
+            "pattern": "しんぺー",
+            "matches": 2,
+            "examples": [
+              "しんぺー",
+              "しんぺー"
+            ]
+          }
+        ],
+        "severity": "CRITICAL"
+      }
+    ],
+    "clean_files": [],
+    "deleted_files": [
+      "meeting_2026-03-09_______________1773079219155.md",
+      "meeting_2026-03-09__2026_03_08_17_28_PDT_に開始した会議___Gemini_によるメモ.md",
+      "meeting_2026-03-10_GitHub_Token__________1773163594733.md",
+      "meeting_2026-03-10_Google_Apps_Script________1773170349398.md",
+      "meeting_2026-03-09_____________1773070229492.md",
+      "meeting_2026-03-10__GitHub_Token________1773164357718.md"
+    ]
+  },
+  {
+    "timestamp": "2026-04-05T19:40:02.150512",
+    "total_files": 0,
+    "confidential_files": [],
+    "clean_files": [],
+    "deleted_files": []
+  },
+  {
+    "timestamp": "2026-04-05T19:50:01.485934",
+    "total_files": 0,
+    "confidential_files": [],
+    "clean_files": [],
+    "deleted_files": []
+  },
+  {
+    "timestamp": "2026-04-05T20:00:01.910585",
+    "total_files": 0,
+    "confidential_files": [],
+    "clean_files": [],
+    "deleted_files": []
+  },
+  {
+    "timestamp": "2026-04-05T20:00:01.953653",
     "total_files": 0,
     "confidential_files": [],
     "clean_files": [],
